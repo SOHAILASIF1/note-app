@@ -1,0 +1,16 @@
+.notecard{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 240px;
+    
+}
+.notecard-button{
+    display: flex;
+    justify-content: end;
+    margin-top: 2px;
+}
+.notecard-button button{
+    color: red;
+    margin-right: 10px;
+}

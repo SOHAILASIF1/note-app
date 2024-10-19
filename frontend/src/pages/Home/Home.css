@@ -1,0 +1,49 @@
+.home {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Changed to column for the main container */
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center the items */
+    gap: 16px; /* Space between items */
+}
+
+.note-card {
+    flex: 0 0 calc(25% - 16px); /* Each note card takes 25% width, minus the gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.no-notes-message {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .no-notes-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .no-notes-message p {
+    font-size: 18px;
+    color: #888;
+  }
+  
+
+/* Button styling */
+.button-home {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    padding: 20px;
+    border: none;
+    background-color: wheat;
+    border-radius: 30px;
+}

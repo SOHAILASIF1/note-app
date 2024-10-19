@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px; /* Add space to the right of the logo */
+}
+
+.button-navbar {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5b9bd5; /* A beautiful blue color */
+    color: white; /* White text for better contrast */
+    border-radius: 5px;
+    margin-left: 10px; /* Increased margin to create a gap */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-navbar:hover {
+    background-color: #4a8cc2; /* Darker shade on hover */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px; /* Add margin to create space on both sides of the search bar */
+}
+
+.search input {
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 200px;
+    max-width: 100%;
+    transition: width 0.3s;
+    margin-right: 10px; /* Space between input and button */
+}
+
+.search input:focus {
+    border-color: #5b9bd5; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.menu-button {
+    display: none; /* Hide by default */
+    font-size: 24px; /* Font size for the menu icon */
+    cursor: pointer;
+    margin-left: 20px; /* Space to the left of the menu button */
+}
+
+.button-box {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .button-box {
+        width: 100%; /* Full width for buttons on small screens */
+        flex-direction: column; /* Stack buttons vertically */
+        display: none; /* Hide button box by default */
+        margin-top: 10px; /* Space between the button box and other elements */
+    }
+
+    .button-box.active {
+        display: flex; /* Show when menu is active */
+    }
+
+    .search {
+        width: 100%; /* Full width for search bar on small screens */
+        margin: 10px 0; /* Add margin for top and bottom space */
+    }
+
+    .menu-button {
+        display: block; /* Show the menu button on smaller screens */
+        margin-left: auto; /* Push the menu button to the right */
+    }
+}
